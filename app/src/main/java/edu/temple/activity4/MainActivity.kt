@@ -24,4 +24,6 @@ class MainActivity : AppCompatActivity() {
 /* Convert to RecyclerView.Adapter */
 class TextSizeAdapter {
 
+
+
 }
