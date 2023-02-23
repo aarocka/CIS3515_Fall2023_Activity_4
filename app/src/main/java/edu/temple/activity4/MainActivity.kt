@@ -1,5 +1,6 @@
 package edu.temple.activity4
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -39,7 +40,15 @@ class MainActivity : AppCompatActivity() {
         */
 
         textSizeSelector.adapter = TextSizeAdapter(textSizes){
-            textSizeDisplay.textSize = it
+            //textSizeDisplay.textSize = it
+            //create intent to launch display activity
+            val intent = Intent(this, DisplayActivity::class.java)
+            //pass data using extra
+
+            intent.putExtra("textSize", it)
+
+            startActivity(intent)
+
         }
         textSizeSelector.layoutManager = LinearLayoutManager(this)
     }
