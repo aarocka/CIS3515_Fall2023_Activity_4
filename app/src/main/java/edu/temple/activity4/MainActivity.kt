@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         textSizeSelector= findViewById(R.id.recyclerView)
         textSizeDisplay = findViewById(R.id.textView)
-        
+
         // Trying to create array of integers that are multiples of 5
         // Verify correctness by examining array values.
         val textSizes = Array(20){(it + 1) * 5}
